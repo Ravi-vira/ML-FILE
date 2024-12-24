@@ -14,7 +14,7 @@ const resetButton = document.getElementById('reset-button');
 // Initialize MobileNet classifier
 async function initializeModel() {
     try {
-        classifier = await ml5.imageClassifier('MobileNet', () => {
+        classifier = await ml5.imageClassifier('https://teachablemachine.withgoogle.com/models/IENJKxcbQ/', () => {
             isModelLoaded = true;
             modelStatus.textContent = 'MobileNet model loaded successfully!';
             modelStatus.style.backgroundColor = '#d4edda';
